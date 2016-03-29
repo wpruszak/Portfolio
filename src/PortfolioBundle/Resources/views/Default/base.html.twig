@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Wojciech Pruszak - Portfolio">
+    <meta name="keywords" content="Portfolio, Wojciech, Pruszak, Web, Development, PHP, Java, Javascript, HTML"/>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Hello!{% endblock %}</title>
+    {% block stylesheets %}
+        {% stylesheets
+        'https://fonts.googleapis.com/css?family=Roboto:400,700,500'
+        'https://fonts.googleapis.com/css?family=Lato:300,400'
+        'css/bootstrap.min.css'
+        'css/animate.min.css'
+        'css/font-awesome.min.css'
+        'css/owl.carousel.css'
+        'css/owl.theme.css'
+        'css/reset.css'
+        'css/style.css'
+        'css/mobile.css'
+        'css/skin/summer-orange.css'
+        filter='yui_css' output='css/compiled/app.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}"/>
+        {% endstylesheets %}
+        {% stylesheets
+        'fonts/fontawesome-webfont.ttf'
+        output='css/fonts/fontawesome-webfont.ttf' %}
+        {% endstylesheets %}
+        {% stylesheets
+        'fonts/fontawesome-webfont.woff'
+        output='css/fonts/fontawesome-webfont.woff' %}
+        {% endstylesheets %}
+        {% stylesheets
+        'fonts/fontawesome-webfont.woff2'
+        output='css/fonts/fontawesome-webfont.woff2' %}
+        {% endstylesheets %}
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+
+<body>
+
+{% block body %}{% endblock %}
+
+{% block javascripts %}
+    {% javascripts
+    'js/jquery-1.11.1.min.js'
+    'js/bootstrap.min.js'
+    'js/owl.carousel.min.js'
+    'js/jquery.stellar.min.js'
+    'js/wow.min.js'
+    'js/waypoints.min.js'
+    'js/isotope.pkgd.min.js'
+    'js/classie.js'
+    'js/jquery.easing.min.js'
+    'js/jquery.counterup.min.js'
+    'js/smoothscroll.js'
+    'js/theme.js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+</body>
+
+</html>
