@@ -48,26 +48,10 @@
 
 {% block body %}{% endblock %}
 
-{% block jquery %}
-    {% javascripts
-    'js/jquery-1.11.1.min.js' %}
-    <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-{% endblock %}
-
 {% block javascripts %}
     {% javascripts
-    'js/bootstrap.min.js'
-    'js/owl.carousel.min.js'
-    'js/jquery.stellar.min.js'
-    'js/wow.min.js'
-    'js/waypoints.min.js'
-    'js/isotope.pkgd.min.js'
-    'js/classie.js'
-    'js/jquery.easing.min.js'
-    'js/jquery.counterup.min.js'
-    'js/smoothscroll.js'
-    'js/theme.js' %}
+    'js/jquery-1.11.1.min.js'
+    'js/notjQuery/*' %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
