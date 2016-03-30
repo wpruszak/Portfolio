@@ -25,3 +25,15 @@ monolog:
             level: debug
         console:
             type:  console
+
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    read_from: '%kernel.root_dir%/Resources/'
+    write_to:  '%kernel.root_dir%/../web/'
+    filters:
+        cssrewrite: ~
+        yui_css:
+            jar: '%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar'
+        yui_js:
+            jar: '%kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar'
