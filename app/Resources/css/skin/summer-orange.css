@@ -11,19 +11,19 @@ a, a:hover, a:focus {
 	color: #9f3a00;
 }
 .navbar-default, .navbar-default.navbar-fixed-top.navbar-shrink {
-  background-color: #F26B1D;
+  /*background-color: #F26B1D;*/
 }
 .navbar-default .navbar-nav > li > a {
-	color: #fde1d1;
+	color: #808181;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav>.active>a {
-	color: #fff !important;
+	color: #3b3b3b !important;
 }
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
-	color: #fde1d1;
+	color: #808181;
 }
 .navbar-default.navbar-shrink .navbar-nav > li > a:hover, .navbar-default.navbar-shrink .navbar-nav > li > a:focus, .navbar-default.navbar-shrink .navbar-nav > li.active > a {
-	color: #fff;
+	color: #3b3b3b;
 }
 .navbar-default.navbar-shrink .navbar-nav > li.active > a {
 	-webkit-box-shadow: inset 0 3px #fff !important;
