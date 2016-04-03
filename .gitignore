@@ -5,6 +5,7 @@
 /phpunit.xml
 /var/*
 !/var/cache
+/web/fonts
 /var/cache/*
 !var/cache/.gitkeep
 !/var/logs
