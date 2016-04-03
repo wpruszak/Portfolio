@@ -25,7 +25,7 @@
         'css/style.css'
         'css/mobile.css'
         'css/skin/summer-orange.css'
-        filter='yui_css' output='css/compiled/app.css' %}
+        filter='cssrewrite, yui_css' output='css/compiled/app.css' %}
         <link rel="stylesheet" href="{{ asset_url }}"/>
         {% endstylesheets %}
         {% stylesheets
@@ -51,7 +51,9 @@
 {% block javascripts %}
     {% javascripts
     'js/jquery-1.11.1.min.js'
-    'js/notjQuery/*' %}
+    'js/notjQuery/*'
+    'js/theme/theme.js'
+    filter='yui_js' %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
